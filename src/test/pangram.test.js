@@ -12,7 +12,7 @@ test ("if sentence is 'Pack my box with five dozen liquor jugs' and return true"
     expect(pangram('Pack my box with five dozen liquor jugs')).toBe(true);
 });
 
-test ("if sentence is 'five boxing wizards jump quickly at it' and return true", () => {
+test ("if sentence is 'five boxing wizards jump quickly at it' and return false", () => {
     expect(pangram('five boxing wizards jump quickly at it')).toBe(false);
 });
 
