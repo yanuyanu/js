@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "js",
   "main": "sum_of_squares.js",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
   "devDependencies": {
     "jest": "^25.1.0"
   },
