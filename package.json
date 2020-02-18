@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "js",
+  "main": "sum_of_squares.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yanuyanu:12CumaAdmin34@github.com/yanuyanu/js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanuyanu/js/issues"
+  },
+  "homepage": "https://github.com/yanuyanu/js#readme"
+}
