@@ -1,4 +1,4 @@
-const sos = require('./sum_of_squares');
+const sos = require('../main/sum_of_squares');
 
 test ('Set n = 1, then the result is 1', () => {
     expect(sos(1)).toBe(1);

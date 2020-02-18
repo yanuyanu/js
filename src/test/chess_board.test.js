@@ -1,4 +1,4 @@
-const cb = require('./chess_board');
+const cb = require('../main/chess_board');
 
 test ('ChessBoard Set n = 1, then the result is 1', () => {
     expect(cb.chessBoard(1)).toBe(1);

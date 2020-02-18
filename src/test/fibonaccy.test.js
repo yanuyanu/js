@@ -1,4 +1,4 @@
-const mf = require('./fibonaccy');
+const mf = require('../main/fibonaccy');
 
 test ('Multiple Fibonaccy Set n = 1, then the result is 1', () => {
     expect(mf(1)).toBe(1);
