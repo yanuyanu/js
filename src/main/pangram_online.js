@@ -11,15 +11,17 @@ const INPUT = 'http://www.gutenberg.org/files/59906/59906-h/59906-h.htm';
 axios.get(INPUT)
     .then((response) => {
         const dom = new JSDOM(response.data);
-        const result = process(dom.window.document.querySelector("body").textContent);
+        const result = generateToPangramJsonArray(dom.window.document.querySelector("body").textContent);
         save(result);
 });
 
 /**
- * 1. Split each character
+ * 1. Read each character
+ * 2. if character is alphabet, then set to SET function
+ * 3. if total SET is 26, then add to jsonArray, and SET function dispose/clear
  * @param {*} body 
  */
-function process(body){
+function generateToPangramJsonArray(body){
     var uniqueBodies = new Set();
     var startIndex = 0;
     var lengthBodies = 0;
@@ -37,11 +39,6 @@ function process(body){
             lengthBodies = 0; //reset lengthBodies to 0;
             uniqueBodies.clear();
         }
-        if(a>= body.length){
-            uniqueBodies.clear();
-            break;
-        }
-        
     }
 
     return result;
