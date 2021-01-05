@@ -4,7 +4,7 @@
   "description": "js",
   "main": "sum_of_squares.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "jsdom": "^16.2.0",
     "mongodb": "^3.5.3"
   },
